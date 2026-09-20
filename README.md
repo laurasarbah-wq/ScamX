@@ -4,6 +4,12 @@
 **توقّف. تحقّق. احمِ نفسك.**
 
 ScamX is a privacy-friendly checker for suspicious messages, links, and phone numbers. It uses a shared Kotlin risk engine and shared Compose Multiplatform interface for Android and the web. Message analysis happens on the device. If the user explicitly enables the optional online reputation check, only an extracted URL is sent—never the pasted message.
+# Website Preview 1
+<img width="1919" height="900" alt="Screenshot 2026-09-20 122558" src="https://github.com/user-attachments/assets/a72b0db4-63ee-4b1d-836b-a02998f8f1c7" />
+# Website Preview 2
+<img width="1910" height="836" alt="Screenshot 2026-09-20 122625" src="https://github.com/user-attachments/assets/5d339f65-b76b-4486-8e19-8b0cee1c2d0b" />
+
+
 
 The final v1.2 release includes:
 
