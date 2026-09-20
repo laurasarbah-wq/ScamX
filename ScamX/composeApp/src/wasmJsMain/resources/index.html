@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#d62828">
+    <meta name="description" content="ScamX checks messages, links, and phone numbers for common risk indicators—privately on your device.">
+    <title>ScamX — Pause. Check. Protect.</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <style>
+        html, body { margin: 0; width: 100%; height: 100%; background: #f7f7f5; overflow: hidden; }
+        body { font-family: Inter, Arial, "Noto Sans Arabic", sans-serif; }
+        #loading { position: fixed; inset: 0; display: grid; place-items: center; color: #d62828; font: 700 16px Arial; }
+        canvas { outline: none; }
+    </style>
+</head>
+<body>
+    <div id="loading">Loading ScamX…</div>
+    <script>
+        window.addEventListener('load', () => document.getElementById('loading')?.remove());
+    </script>
+    <script src="scamx.js"></script>
+</body>
+</html>

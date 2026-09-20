@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>ScamX Moderator Console</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><div class="brand"><span class="logo">X</span><div><strong>ScamX</strong><small>Moderator Console</small></div></div><span class="human">Human decision required</span></header>
+  <main>
+    <section class="hero"><p class="eyebrow">PRIVATE ADMIN TOOL</p><h1>Community review queue</h1><p>AI highlights possible policy issues. It never publishes or rejects a report automatically.</p></section>
+    <section class="connect panel">
+      <label>API URL<input id="api" type="url" placeholder="https://your-worker.workers.dev"></label>
+      <label>Moderator token<input id="token" type="password" placeholder="Stored only in this tab"></label>
+      <label>Status<select id="status"><option value="pending">Pending</option><option value="approved">Approved</option><option value="rejected">Rejected</option></select></label>
+      <button id="load">Load queue</button>
+    </section>
+    <div class="summary"><span id="count">0 reports</span><span class="legend"><i class="green"></i> Green <i class="red"></i> Flagged <i class="gray"></i> AI unavailable</span></div>
+    <p id="message" role="status"></p>
+    <section id="queue" class="queue" aria-live="polite"></section>
+  </main>
+  <template id="card-template">
+    <article class="report panel">
+      <div class="card-head"><span class="ai-badge"></span><time></time></div>
+      <h2 class="type"></h2><p class="meta"></p><p class="notes"></p>
+      <div class="reasons"><strong>Why AI/policy checks marked this</strong><ul></ul></div>
+      <label class="note-label">Moderator note<textarea maxlength="300" placeholder="Optional internal reason"></textarea></label>
+      <div class="actions"><button class="approve">Approve</button><button class="reject">Reject</button></div>
+    </article>
+  </template>
+  <script src="moderator.js"></script>
+</body>
+</html>

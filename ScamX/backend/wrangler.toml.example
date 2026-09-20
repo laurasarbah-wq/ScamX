@@ -1,0 +1,18 @@
+name = "scamx-api"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "scamx-community"
+database_id = "REPLACE_WITH_D1_DATABASE_ID"
+
+[vars]
+ALLOWED_ORIGIN = "https://REPLACE_WITH_PUBLIC_WEBSITE_DOMAIN,https://REPLACE_WITH_MODERATOR_DOMAIN"
+
+# Add secrets with Wrangler; never commit them:
+# wrangler secret put ADMIN_TOKEN
+# wrangler secret put GOOGLE_SAFE_BROWSING_KEY
+# wrangler secret put OPENAI_API_KEY
+# Optional notification endpoint (Slack/Teams/automation webhook):
+# wrangler secret put MODERATOR_WEBHOOK_URL

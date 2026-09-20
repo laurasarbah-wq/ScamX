@@ -1,0 +1,11 @@
+.gradle/
+.idea/
+**/build/
+local.properties
+*.iml
+.DS_Store
+.dev.vars
+backend/wrangler.toml
+outputs/
+work/
+*.apk
